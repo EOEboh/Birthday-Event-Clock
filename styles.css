@@ -1,6 +1,7 @@
 html,
 body{
     padding: 0.2rem;
+    margin: 0.2rem,0.2rem;
 }
 body{
     background-color: #000;
@@ -10,13 +11,12 @@ h1,
     color: cornsilk;
     font-size: 200%;
 }
+/* using flex-box */
 #dog{
     display: flex;
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
-    
-
 }
 #timeEvent{
     color: cornsilk;
