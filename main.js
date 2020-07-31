@@ -64,7 +64,7 @@ let updatedClock = function(){
     else if ( time == bedTime){
         image = document.getElementById("dog").innerHTML = "<img src ='./img/two.jpg' />";
         imageText = "Sweet dreams";
-        bedTimeEvent();
+        
 
     }
     else if ( time < noon){
