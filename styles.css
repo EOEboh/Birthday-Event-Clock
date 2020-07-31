@@ -1,0 +1,36 @@
+body{
+    background-color: #000;
+}
+h1,
+#clock{
+    color: cornsilk;
+    font-size: 200%;
+}
+#dog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+blockquote{
+    color: cornsilk;
+    text-align: center;
+    font-size: large;
+    text-transform: uppercase;
+}
+span {
+    color: cornsilk;
+}
+#selectors{
+    text-align: center;
+}
+#wakeUpTimeSelector,
+#lunchTimeSelector,
+#bedTimeSelector{
+    padding: .5rem;
+}
+#clickButton{
+    padding: .8rem;
+    width: 35%;
+    border-radius: 10%;
+}
