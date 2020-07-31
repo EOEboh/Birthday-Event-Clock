@@ -48,11 +48,10 @@ let updatedClock = function(){
 
     if (time == clickTime){
         image = document.getElementById("dog").innerHTML = "<img src = './img/birthday.jpg' />";
+        
         imageText = "Happy Birthday to you!!";
         document.getElementById("birthdaysong").play();
-        alert("Happy Birthday!!!")
     }
-
     else if ( time == wakeUp){
         image = document.getElementById("dog").innerHTML = "<img src ='./img/wakeup.jpg' />";
         imageText = "Wake Up!!";
