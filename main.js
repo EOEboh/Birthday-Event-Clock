@@ -1,6 +1,6 @@
 let wakeUp = 7;
 let lunch = 12;
-let bedTime = lunch + 2;
+let bedTime = lunch + 9;
 let clickTime;
 let noon = 12;
 let evening = 17;
@@ -47,8 +47,7 @@ let updatedClock = function(){
     document.getElementById("timeEvent");
 
     if (time == clickTime){
-        image = document.getElementById("dog").innerHTML = "<img src = './img/birthday.jpg' />";
-        
+        image = document.getElementById("dog").innerHTML = "<img src = './img/birthday.jpg' />"; 
         imageText = "Happy Birthday to you!!";
         document.getElementById("birthdaysong").play();
     }
@@ -58,17 +57,18 @@ let updatedClock = function(){
 
     }
     else if ( time == lunch){
-        image = document.getElementById("dog").innerHTML = "<img src ='./img/one.jpg' />";
+        image = document.getElementById("dog").innerHTML = "<img src ='./img/lunch.jpg' />";
         imageText = "Let's get lunch";
 
     }
     else if ( time == bedTime){
         image = document.getElementById("dog").innerHTML = "<img src ='./img/two.jpg' />";
         imageText = "Sweet dreams";
+        bedTimeEvent();
 
     }
     else if ( time < noon){
-        image = document.getElementById("dog").innerHTML = "<img src ='./img/three.jpg' />";
+        image = document.getElementById("dog").innerHTML = "<img src ='./img/one.jpg' />";
         imageText = "Good morning";
 
     }
@@ -78,7 +78,7 @@ let updatedClock = function(){
 
     }
     else { 
-        image =  document.getElementById("dog").innerHTML = "<img src ='./img/gevening.jpg' />";
+        image =  document.getElementById("dog").innerHTML = "<img src ='./img/gafternoon.jpg' />";
         imageText = "Good afternoon";
     } 
     // getting the audio to play
@@ -104,7 +104,7 @@ let clickEvent = function(){
     }
     else{ 
         clickTime = -1;
-        clickButton.innerText = "Get A Birthday Wish";
+        clickButton.innerText = "Happy Birthday";
         clickButton.style.backgroundColor = "green";
     }
 
